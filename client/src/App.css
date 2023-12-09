@@ -1,0 +1,12 @@
+body {
+    background-image: url(../public/images/bg_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+html {
+    min-height: 100%;
+}
