@@ -10,7 +10,7 @@ export default function Navbar(){
     }
     return (
         <header>
-        <img src="http://localhost:5173/public/images/logo_1.png"></img>
+        <img src="/images/logo_1.png"></img>
         <nav ref={navRef}>
             <a href="/#">Home</a>
             <a href="/#">About us</a>

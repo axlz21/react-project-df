@@ -1,6 +1,7 @@
 import './App.css'
 import Home from './components/home/Home';
 import Navbar from './components/Header/NavBar';
+import Footer from './components/Footer/Footer';
 function App() {
  
   return (
@@ -9,6 +10,7 @@ function App() {
   
    <h1>Hello from react!</h1>
    <Home></Home>
+   <Footer />
    </>
   )
 }

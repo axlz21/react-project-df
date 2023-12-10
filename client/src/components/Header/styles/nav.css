@@ -6,7 +6,6 @@
 
 header {
     display: flex;
-    width: 100%;
     align-items: center;
     justify-content: space-between;
     height: 80px;
@@ -27,7 +26,7 @@ nav a{
 }
 
 nav a:hover{
-    color: rgb(201, 3, 3);
+    color: rgb(143, 138, 138);
     text-decoration: solid;
 }
 

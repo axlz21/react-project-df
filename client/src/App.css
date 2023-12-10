@@ -3,8 +3,6 @@ body {
     background-image: url(/images/bg_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    min-height: 100vh;
 }
 html {
     min-height: 100%;
