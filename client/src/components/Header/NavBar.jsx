@@ -12,13 +12,13 @@ export default function Navbar(){
         <header>
         <img src="/images/logo_1.png"></img>
         <nav ref={navRef}>
-            <a href="/#">Home</a>
-            <a href="/#">About us</a>
-            <a href="/#">Teams</a>
-            <a href="/#">League</a>
-            <a href="/#">Register</a>
-            <a href="/#">Login</a>
-            <a href="/#">Logout</a>
+            <a href="/">Home</a>
+            <a href="/aboutus">About us</a>
+            <a href="/teams">Teams</a>
+            <a href="/league">League</a>
+            <a href="/register">Register</a>
+            <a href="/login">Login</a>
+            <a href="/logout">Logout</a>
             <button className="nav-btn nav-close-button" onClick={showNav}>
                 <FaTimes />
             </button>
