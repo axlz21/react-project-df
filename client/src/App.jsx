@@ -1,12 +1,14 @@
 import './App.css'
-import HeaderNav from './components/Header/Header'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './components/home/Home';
+import Navbar from './components/Header/NavBar';
 function App() {
  
   return (
    <>
-   <HeaderNav />
+   <Navbar />
+  
    <h1>Hello from react!</h1>
+   <Home></Home>
    </>
   )
 }
