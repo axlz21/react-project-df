@@ -3,11 +3,11 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './components/home/Home';
 import Navbar from './components/Header/NavBar';
 import Footer from './components/Footer/Footer';
-import TeamList from './components/teamList/teamList';
 import About from './components/aboutus/About';
 import Register from './components/register/Register';
 import League from './components/league/League';
 import Login from './components/login/Login';
+import TeamList from './components/teamList/teamList';
 function App() {
  
   return (
