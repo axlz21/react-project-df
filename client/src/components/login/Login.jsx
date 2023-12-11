@@ -1,10 +1,18 @@
+import "./login.css"
+import React from 'react';
 export default function Login(){
     return(
-        <div>
+        <div className="cover">
             <h1>Login</h1>
-            <form>
+            <input type="text" placeholder="username"></input>
+            <input type="password" placeholder="password"></input>
 
-            </form>
+            <div className="login-btn">Login</div>
+            <p className="text">Or loing using</p>
+            <div className="alt-login">
+                <div className="facebook"></div>
+                <div className="google"></div>
+            </div>
         </div>
     )
 }
