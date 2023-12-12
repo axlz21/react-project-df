@@ -10,6 +10,10 @@
     display: inline-block;
 } 
 
+.card:hover {
+    transform: scale(1.05)
+}
+
 .card .card-image{
     max-width: 60%;
     height: auto;

@@ -3,9 +3,17 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    place-items: center;
+
 
 }
-
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Optional: Set a specific height if needed */
+  }
+  
 .cover {
     background-color: white;
     width: 30em;

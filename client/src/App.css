@@ -3,6 +3,9 @@ body {
     background-image: url(/images/bg_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    align-items: center;
+    place-items: center;
+    
 }
 html {
     min-height: 100%;
