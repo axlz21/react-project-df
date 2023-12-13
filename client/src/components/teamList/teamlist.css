@@ -38,3 +38,25 @@
     color: white;
     text-align: center;
 }
+.join-btn {
+    background-color: rgb(32, 177, 255);
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+}
+
+.join-btn:hover { transform: scale(1.25);}
+
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Optional: Set a specific height if needed */
+  }
+  
+  
