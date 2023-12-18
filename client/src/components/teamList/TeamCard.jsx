@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom"
 import "./teamlist.css"
 
 export default function TeamCard({
+    _id,
     teamName,
     imageUrl,
     city,
@@ -13,7 +15,7 @@ export default function TeamCard({
                 <img className="card-image" alt="logo" src={imageUrl}></img>
                 <h2 className="card-title">{teamName}</h2>
                 <p className="card-description">{description}</p>
-                <button>More info...</button>
+                <Link to={`/teams/${_id}`} className="details-btn">More info</Link>
             </div>
         </>
     )
