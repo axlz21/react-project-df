@@ -8,7 +8,7 @@ export default function RegisterTeam() {
         const teamData = Object.fromEntries(new FormData(e.currentTarget));
         try {
             await teamService.create(teamData)
-            navigate('/teams')
+            navigate('/')
         } catch (error) {
             console.log(error)
         }
@@ -24,7 +24,7 @@ export default function RegisterTeam() {
                     <input type="text" name="teamName" placeholder="Team name"></input>
                     <input type="text" name="city" placeholder="City"></input>
                     <input type="text" name="phone" placeholder="Phone number"></input>
-                    <input type="text" name="logo" placeholder="Logo URL"></input>
+                    <input type="text" name="imageUrl" placeholder="Logo URL"></input>
                     <input type="text-area" name="description" placeholder="Team description"></input>
                     <input className="join-btn" type="submit" value="Join"></input>
                 </div>

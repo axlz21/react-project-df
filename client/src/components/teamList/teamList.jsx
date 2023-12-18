@@ -18,11 +18,9 @@ export default function TeamList() {
             
             <h2 className="title">Teams: <Button /> </h2>
             <div>
-                <TeamCard />
-                <TeamCard />
-                <TeamCard />
-                <TeamCard />
-                <TeamCard />
+                {teams.map(team => (<TeamCard key={team._id} {...team} />))}
+
+                {teams.length===0 && <h3>No teams yet!</h3>}
                 <RegisterTeam />
             </div>
         </div>
