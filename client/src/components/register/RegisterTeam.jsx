@@ -1,8 +1,19 @@
+import { useNavigate } from 'react-router-dom';
+import * as teamService from '../../services/teamService'
+
 export default function RegisterTeam() {
-    const registerTeamHandler = (e) => {
+    const navigate = useNavigate()
+    const registerTeamHandler = async (e) => {
         e.preventDefault()
         const teamData = Object.fromEntries(new FormData(e.currentTarget));
-        
+        try {
+            await teamService.create(teamData)
+            navigate('/teams')
+        } catch (error) {
+            console.log(error)
+        }
+
+
     }
 
     return (
