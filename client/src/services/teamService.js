@@ -1,11 +1,11 @@
 import * as request from "../lib/requester"
 
-const baseUrl = "http://localhost:3030/jsonstore/teams"
+const baseUrl = "http://localhost:3030/data/teams"
 
 
 export const getAll = async () => {
     const result = await request.get(baseUrl);
-    return Object.values(result)
+    return result
 };
 
 export const create = async (teamData) => {

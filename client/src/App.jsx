@@ -14,6 +14,8 @@ import TeamDetails from './components/teamList/TeamDetails';
 import RegisterTeam from './components/register/RegisterTeam';
 import AuthContext from './context/authContext';
 import Logout from './components/logout/Logout';
+import ErrorBoundary from './components/errorBoundries';
+import AuthGuard from './components/guards/AuthGuard';
 
 function App() {
   const navigate= useNavigate()
@@ -50,6 +52,7 @@ function App() {
     isAuthtenticated: !!auth.accessToken,
    };
   return (
+    <ErrorBoundary>
    <AuthContext.Provider value={values}>
     <Navbar />
     <Routes>
@@ -59,12 +62,17 @@ function App() {
     <Route path='/register' element={<Register />}/>
     <Route path='/league' element={<League />}/>
     <Route path='/login' element={<Login />}/>
-    <Route path='/logout' element={<Logout />} />
-    <Route path='/registerteam' element={<RegisterTeam />} />
+    
+    
     <Route path='/teams/:teamId' element={<TeamDetails />} />
+    <Route element={<AuthGuard />}>
+    <Route path='/registerteam' element={<RegisterTeam />} />
+    <Route path='/logout' element={<Logout />} />
+    </Route>
     </Routes>
     <Footer />
    </AuthContext.Provider>
+   </ErrorBoundary>
   )
 }
 
