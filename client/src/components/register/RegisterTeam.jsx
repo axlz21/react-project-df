@@ -8,7 +8,7 @@ export default function RegisterTeam() {
         const teamData = Object.fromEntries(new FormData(e.currentTarget));
         try {
             await teamService.create(teamData)
-            navigate('/')
+            navigate('/teams')
         } catch (error) {
             console.log(error)
         }

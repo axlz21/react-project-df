@@ -8,7 +8,7 @@ export default function Logout() {
     useEffect(() => {
         authService.logout()
             .then(() => logoutHandler())
-            .catch(() => logoutHandler(),navigate('/login'))
+            .catch(() => logoutHandler())
     }, [])
     return null;
 }

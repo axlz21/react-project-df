@@ -62,11 +62,11 @@ function App() {
     <Route path='/register' element={<Register />}/>
     <Route path='/league' element={<League />}/>
     <Route path='/login' element={<Login />}/>
-    
+    <Route path='/registerteam' element={<RegisterTeam />} />
     
     <Route path='/teams/:teamId' element={<TeamDetails />} />
     <Route element={<AuthGuard />}>
-    <Route path='/registerteam' element={<RegisterTeam />} />
+    
     <Route path='/logout' element={<Logout />} />
     </Route>
     </Routes>

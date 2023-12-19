@@ -18,3 +18,7 @@ export const getOne = async (teamId) => {
 
     return result;
 }
+
+export const remove = async(teamId) => {
+    const result =  request.remove(`${baseUrl}/${teamId}`)
+}
